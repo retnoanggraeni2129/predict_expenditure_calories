@@ -4,6 +4,7 @@ kaggle_competition
 # Introduction
 ## Project Description
 This is a data science competition project organized by kaggle. Predict calorie expenditure is the process of estimating the number of calories burned by the body during certain activities or under resting conditions. For those of you who want to see how other participants completed this competition, just access the kaggle competition page via the following link: https://www.kaggle.com/competitions/playground-series-s5e5/data
+
 ## Purpose Project
 Tujuan dari project ini adalah untuk membangun model machine learning yang paling akurat untuk memprediksi pengeluaran kalori berdasarkan data aktivitas fisik dan fitur terkait lainnya. Project ini dapat membantu mengukur kebutuhan energi seseorang dan merancang program diet atau latihan secara optimal. 
 
