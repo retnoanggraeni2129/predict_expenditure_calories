@@ -20,8 +20,11 @@ This dataset does not have any empty data, so this stage can be skipped. This da
 ### 2. Transformasi Data
 Standardize the numerical data after separating the train and test data to have an equal scale and to maintain the index data. This is done because the data to be predicted has a continuous index of train data and test data, so the separation of train data and test data is done earlier than data standardization.  
 
+### 3. Encoding
+The data was collected on a single categorical variable, namely the ‘Sex’ feature, which has two unique values: ‘Male’ and ‘Female’. 
+
 ## Feature Selection
-Based on hypothesis testing with Spearman and Pearson, the results show that there are three variables that correlate with calorie value, namely Duration (length of activity), Heart_Rate and Body_Temp. So these three variables will be used as predict variables, while caloric value will be used as the target variable.
+Based on hypothesis testing with Spearman and Pearson, the results show that there are three variables that correlate with calorie value, called Duration (length of activity), Heart_Rate and Body_Temp. So these three variables will be used as predict variables, while caloric value will be used as the target variable. And last but not least, although the correlation cannot be measured between calorie and 'Sex', according to several sources, gender differences can affect a person's calorie requirements and expenditure.
 
 ## Model Selection
 From the results of the Linear Regression model evaluation, a fairly good r2_square was obtained. Each of these values is the R2 obtained by the model on each different fold (data division). It can be seen that all of them are very high, approaching 0.95. The average R2 of all folds is 0.95, which is very consistent with the R2 of 0.95 obtained from the previous train_test_split. This shows that the model performs very well on average across various data subsets. 
