@@ -24,7 +24,12 @@ Standardize the numerical data after separating the train and test data to have 
 Based on hypothesis testing with Spearman and Pearson, the results show that there are three variables that correlate with calorie value, namely Duration (length of activity), Heart_Rate and Body_Temp. So these three variables will be used as predict variables, while caloric value will be used as the target variable.
 
 ## Model Selection
-Of the two models built, namely Linear Regression and Random Forest Regression, I chose to use the Random Forest Regression Model to predict the test data. This is because the model evaluation results show that Random Forest Regression has a better model evaluation value even though from the scatter plot results Linear Regression is more fit than Random Forest Regression. This is because my main focus is to get prediction results that are closer to the train data. The MSE is lower (0.03256 vs. 0.04982), which means the prediction is more accurate and closer to the actual data. The R-squared is also higher in Random Forest (0.9674 vs. 0.9502), indicating this model is able to explain more of the data variance.
+From the results of the Linear Regression model evaluation, a fairly good r2_square was obtained. Each of these values is the R2 obtained by the model on each different fold (data division). It can be seen that all of them are very high, approaching 0.95. The average R2 of all folds is 0.95, which is very consistent with the R2 of 0.95 obtained from the previous train_test_split. This shows that the model performs very well on average across various data subsets. 
+
+Standard Deviation R2: 0.00. This is a very strong point. A standard deviation of zero (or very close to zero when rounded) indicates that the R2 generated in each cross-validation fold is very stable and consistent. The model provides nearly identical performance regardless of which data subset is used to train and evaluate it. This is a key indicator of the model's high stability and robustness.
+
+These cross-validation results provide strong evidence that the Machine Learning model is highly stable, robust, and has exceptional predictive performance. Performance stability (R2 and RMSE) remains virtually unchanged across different data splits. In terms of robustness, the model is not overly sensitive to small variations in the training data. 
+
 
 # Contact
 LinkedIn: http://www.linkedin.com/in/retnoanggraeni/
